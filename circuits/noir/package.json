@@ -1,0 +1,32 @@
+{
+    "name": "noir",
+    "scripts": {
+        "compile": "cd circuits/${0} && chmod u+x ../../scripts/compile.sh && ../../scripts/compile.sh",
+        "generate:prover": "cd circuits/${0} && chmod u+x ../../scripts/generate-prover.sh && ../../scripts/generate-prover.sh",
+        "generate:witness": "cd circuits/${0} && chmod u+x ../../scripts/generate-witness.sh && ../../scripts/generate-witness.sh",
+        "prove:verify": "cd circuits/${0} && chmod u+x ../../scripts/prove-verify.sh && ../../scripts/prove-verify.sh ${0}",
+        "test": "cd circuits/${0} && nargo test",
+        "test:log": "cd circuits/${0} && nargo test --show-output",
+        "test:libraries": "cd tests && nargo test",
+        "test:libraries:log": "cd tests && nargo test --show-output",
+        "prettier": "prettier -c .",
+        "prettier:write": "prettier -w .",
+        "version:tag": "git tag ${0}-v${1}",
+        "version:release": "changelogithub",
+        "nargo:fmt": "find circuits -maxdepth 1 -type d ! -path 'circuits' -exec bash -c 'cd \"$0\" && nargo fmt' {} \\;",
+        "nargo:fmt:check": "find circuits -maxdepth 1 -type d ! -path 'circuits' -exec bash -c 'cd \"$0\" && nargo fmt --check' {} \\;",
+        "check": "yarn prettier && yarn nargo:fmt:check",
+        "format": "yarn prettier:write && yarn nargo:fmt"
+    },
+    "packageManager": "yarn@4.12.0",
+    "dependencies": {
+        "@aztec/bb.js": "1.2.1",
+        "@noir-lang/noir_js": "1.0.0-beta.10"
+    },
+    "devDependencies": {
+        "@types/node": "^25.2.2",
+        "changelogithub": "^14.0.0",
+        "prettier": "^3.8.1",
+        "typescript": "^5.9.3"
+    }
+}
