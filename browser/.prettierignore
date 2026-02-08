@@ -4,12 +4,8 @@ package-lock.json
 yarn.lock
 .yarn
 
-
-# circuits
-circuits
-
 # zk artifacts 
-build
+/public/rln-zk-artifacts
 
 # debug
 npm-debug.log*
