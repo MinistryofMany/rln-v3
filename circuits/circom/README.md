@@ -1,6 +1,6 @@
 # Circuits
 
-This project contains the RLN V3 circom circuits.
+This project contains the RLN V3 Circom circuits.
 
 ## Install Dependencies
 
