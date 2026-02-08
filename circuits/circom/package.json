@@ -1,6 +1,18 @@
 {
   "name": "circom",
   "packageManager": "yarn@4.12.0",
+  "scripts": {
+    "compile": "chmod u+x ./scripts/compile.sh && ./scripts/compile.sh",
+    "execute": "chmod u+x ./scripts/execute.sh && ./scripts/execute.sh",
+    "groth16": "chmod u+x ./scripts/execute-groth16.sh && ./scripts/execute-groth16.sh",
+    "plonk": "chmod u+x ./scripts/execute-plonk.sh && ./scripts/execute-plonk.sh",
+    "fflonk": "chmod u+x ./scripts/execute-fflonk.sh && ./scripts/execute-fflonk.sh",
+    "generate-witness": "chmod u+x ./scripts/generate-witness.sh && ./scripts/generate-witness.sh",
+    "remove-build-folder": "chmod u+x ./scripts/remove-build-folder.sh && ./scripts/remove-build-folder.sh",
+    "test": "mocha --require tsx test/**/*.ts",
+    "prettier": "prettier -c .",
+    "prettier:write": "prettier -w ."
+  },
   "dependencies": {
     "@zk-kit/binary-merkle-root.circom": "^2.0.0",
     "circomlib": "^2.0.5"
