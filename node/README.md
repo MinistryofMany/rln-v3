@@ -1,6 +1,6 @@
 # Node.js Benchmarks
 
-This project contains code to benchmark Semaphore V4 and RLN V3 performance in a Node.js environment.
+This project benchmarks RLN V3 in a Node.js environment using the Circom and Snarkjs implementation.
 
 ## Run Proof Generation Benchmarks
 
