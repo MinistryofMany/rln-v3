@@ -10,15 +10,19 @@
     "prettier:write": "prettier -w ."
   },
   "dependencies": {
+    "@semaphore-protocol/core": "^4.14.2",
     "@zk-kit/utils": "1.4.1",
+    "add": "^2.0.6",
     "next": "16.1.6",
     "pretty-ms": "^9.3.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "snarkjs": "0.7.6"
+    "snarkjs": "0.7.6",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/add": "^2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
