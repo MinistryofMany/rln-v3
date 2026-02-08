@@ -6,6 +6,7 @@ yarn.lock
 
 # zk artifacts 
 /public/rln-zk-artifacts
+verification-keys.json
 
 # debug
 npm-debug.log*

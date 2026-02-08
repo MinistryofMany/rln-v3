@@ -7,24 +7,24 @@ import Footer from "@/components/Footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "RLN Benchmarks",
-  description: "RLN Benchmarks App"
+    title: "RLN Benchmarks",
+    description: "RLN Benchmarks App"
 }
 
 export default function RootLayout({
-  children
+    children
 }: Readonly<{
-  children: React.ReactNode
+    children: React.ReactNode
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
-        <div className="flex flex-col min-h-screen px-2 bg-slate-900 text-slate-300">
-          <Header />
-          <main className="mb-auto">{children}</main>
-          <Footer />
-        </div>
-      </body>
-    </html>
-  )
+    return (
+        <html lang="en" suppressHydrationWarning>
+            <body className={inter.className} suppressHydrationWarning>
+                <div className="flex flex-col min-h-screen px-2 bg-slate-900 text-slate-300">
+                    <Header />
+                    <main className="mb-auto">{children}</main>
+                    <Footer />
+                </div>
+            </body>
+        </html>
+    )
 }
