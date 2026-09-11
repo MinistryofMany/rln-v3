@@ -13,7 +13,7 @@
         "@semaphore-protocol/core": "^4.14.2",
         "@zk-kit/utils": "1.4.1",
         "add": "^2.0.6",
-        "next": "16.1.6",
+        "next": "16.3.3",
         "pretty-ms": "^9.3.0",
         "react": "19.2.3",
         "react-dom": "19.2.3",
